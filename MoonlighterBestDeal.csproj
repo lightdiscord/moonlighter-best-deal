@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<AssemblyName>MoonlighterBestDeal</AssemblyName>
+		<Description>Set the right price at the right time</Description>
+		<Version>1.0.0</Version>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<LangVersion>latest</LangVersion>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Reference Include="0Harmony">
+			<HintPath>$(GAME_PATH)/BepInEx/core/0Harmony.dll</HintPath>
+		</Reference>
+		<Reference Include="BepInEx.Core">
+			<HintPath>$(GAME_PATH)/BepInEx/core/BepInEx.Core.dll</HintPath>
+		</Reference>
+		<Reference Include="BepInEx.Unity">
+			<HintPath>$(GAME_PATH)/BepInEx/core/BepInEx.Unity.dll</HintPath>
+		</Reference>
+
+		<Reference Include="Assembly-CSharp">
+			<HintPath>$(GAME_PATH)/Moonlighter_Data/Managed/Assembly-CSharp.dll</HintPath>
+		</Reference>
+
+		<PackageReference Include="BepInEx.PluginInfoProps" Version="1.*" />
+		<PackageReference Include="UnityEngine.Modules" Version="2019.2.20" IncludeAssets="compile" />
+	</ItemGroup>
+</Project>
