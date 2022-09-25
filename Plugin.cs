@@ -55,7 +55,7 @@ namespace MoonlighterBestDeal.Patches {
 			}
 
 			if (!found) {
-				MoonlighterBestDeal.Plugin.Log.LogError($"Call to ItemPriceManager.GetLastPrice not found in ShowcaseSlotGUI.ResetEditingPrize");
+				MoonlighterBestDeal.Plugin.Log.LogError("Call to ItemPriceManager.GetLastPrice not found in ShowcaseSlotGUI.ResetEditingPrize");
 			}
 		}
 	}
